@@ -22,7 +22,7 @@
 }
 
 .formulario{
-    background-color: white;
+    background-color: black;
     width: 500px;
     height: 260px;
     display: inline;
@@ -59,6 +59,12 @@ form{
 }
 
 .saudacao{
-    background-color: white;
+    background-color: green;
     font-size: 20px;
+}
+.rodape{
+    background-color: red;
+    font-size: 20px;
+
+
 }
