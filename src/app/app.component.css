@@ -21,18 +21,28 @@
     display: inline-block;
 }
 
+.logo{
+    background: white;
+    display: inline;
+}
+
 .formulario{
-    background-color: black;
+    background-color: white;
     width: 500px;
-    height: 260px;
+    height: 350px;
     display: inline;
     float: right;
-    margin: -150px 200px 0px 0px;
+    margin: -180px 200px 0px 0px;
     text-align: center;
 }
 
+.saudacao{
+    background-color: white;
+    font-size: 20px;
+}
+
 form{
-    padding: 20px 0px 0px 20px;
+    padding: 0px 0px 0px 20px;
     background-color: white;
     display: inline-block;
 }
@@ -58,13 +68,3 @@ form{
     padding: 8px;
 }
 
-.saudacao{
-    background-color: green;
-    font-size: 20px;
-}
-.rodape{
-    background-color: red;
-    font-size: 20px;
-
-
-}
