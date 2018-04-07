@@ -1,25 +1,36 @@
-<div class="separador"></div>
+<div class="container">
+  <!--Primeira linha-->
+  <div class="row">
+    <!--Primeira coluna-->
+    <div class="col-sm">
+      <h1 class="">Chamada QR</h1>
+      <pre class="text-justify">
 
-<div class="titulo">
-  <h1 class="fonte">Chamada QR</h1>
-</div>
+Acompanhe o andamento do seu evento.
+Crie eventos de forma fácil sem dores de cabeça.
+O Método mais simples de fazer sua chamada na sala de aula.</pre>
+    </div>
+    <!--Fim primeira coluna-->
+    <!--Segunda coluna-->
+    <div class="col-sm">
+      <img src="../assets/img/logo.png" alt="Logo ChamadaQr">
+      <p>Olá! Informe seus dados para entrar.</p>
+      <form>
+        <div class="form-group">
+          <input class="form-control" id="usuario" type="text" placeholder="Usuário" required><br>
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="senha" type="password" placeholder="Senha" required><br>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Login">
+        <br>
+      </form>
+    </div>
+    <!--Fim segunda coluna-->
+  </div>
+  <!--Fim primeira linha-->
+  <!--Segunda linha-->
+  <div class="row">
 
-<div class="subtitulo">
-  <p class="fonte">
-    Acompanhe o andamento do seu evento.<br>
-    Crie eventos de forma fácil sem dores de cabeça.<br>
-    O Método mais simples de fazer sua chamada na sala de aula.<br>
-  </p>
-</div>
-
-<div class="formulario">
-    <img class="logo" src="https://chamadaqr.firebaseapp.com/img/logo.png" alt="Logo ChamadaQr">
-  <p class="fonte saudacao">Olá! Informe seus dados para entrar.</p>
-  <form class="">
-    <input class="controle fonte texto" id="usuario" type="text" placeholder="Usuário" required><br>
-    <input class="controle fonte texto" id="senha" type="password" placeholder="Senha" required><br>
-    <input class="controle fonte botao" type="submit" value="Login">
-    <br>
-  </form>
-  <button (click)="btnclicado()" class="controle fonte texto botao" style="background: white; color: orange;">Cadastre-se</button>
+  </div>
 </div>

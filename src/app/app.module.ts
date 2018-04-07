@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MenuComponent } from './menu/menu.component';
 
 import { AppComponent } from './app.component';
+import { AlertModule } from 'ngx-bootstrap';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
     MenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
