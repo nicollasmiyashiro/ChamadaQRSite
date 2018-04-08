@@ -1,0 +1,14 @@
+@media screen and (min-width:767px){
+	.narrow-results{display:block}
+}
+@media screen and (max-width:766px){
+	.narrow-results{display:none}
+}
+
+.formulario{
+    background-color: white;
+}
+
+.fonte{
+    color: white;
+}
