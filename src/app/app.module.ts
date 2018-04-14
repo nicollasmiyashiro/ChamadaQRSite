@@ -1,15 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MenuComponent } from './menu/menu.component';
 
 import { AppComponent } from './app.component';
 import { AlertModule } from 'ngx-bootstrap';
+import { ListaPresencaComponent } from './lista-presenca/lista-presenca.component';
+import { MenuComponent } from './menu/menu.component';
+import { CadastrarAlunosComponent } from './cadastrar-alunos/cadastrar-alunos.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    ListaPresencaComponent,
+    MenuComponent,
+    CadastrarAlunosComponent
   ],
   imports: [
     BrowserModule,
