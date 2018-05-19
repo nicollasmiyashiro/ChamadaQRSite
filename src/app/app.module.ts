@@ -7,6 +7,7 @@ import { ListaPresencaComponent } from './lista-presenca/lista-presenca.componen
 import { MenuComponent } from './menu/menu.component';
 import { CadastrarAlunosComponent } from './cadastrar-alunos/cadastrar-alunos.component';
 import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,12 +7,21 @@ import { LoginComponent } from '../login/login.component';
 import { MenuComponent } from '../menu/menu.component';
 import { AppComponent } from '../app.component';
 
-
+const routes: Routes = [
+  {path: 'cadastrar-alunos', component: CadastrarAlunosComponent},
+  {path: 'lista-presenca', component: ListaPresencaComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'menu', component: MenuComponent},
+  {path: 'app', component: AppComponent},
+  {path: '', redirectTo: '/login', pathMatch: 'full'}
+]
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forRoot(routes)
   ],
+  exports: [RouterModule],
   declarations: []
 })
 export class AppRoutingModule { 
