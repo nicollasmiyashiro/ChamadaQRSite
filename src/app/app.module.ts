@@ -6,6 +6,7 @@ import { AlertModule } from 'ngx-bootstrap';
 import { ListaPresencaComponent } from './lista-presenca/lista-presenca.component';
 import { MenuComponent } from './menu/menu.component';
 import { CadastrarAlunosComponent } from './cadastrar-alunos/cadastrar-alunos.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CadastrarAlunosComponent } from './cadastrar-alunos/cadastrar-alunos.co
     AppComponent,
     ListaPresencaComponent,
     MenuComponent,
-    CadastrarAlunosComponent
+    CadastrarAlunosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
