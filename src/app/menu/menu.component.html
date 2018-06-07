@@ -19,39 +19,93 @@
   <!--/MENU-->
 
   <!--EVENTOS-->
-  <div class="row">
+  <div *ngIf="eventos > 0" class="row">
     <div class="col-sm-12 p-5">
       <h2 class="text-center" style="color: #ff9800;">EVENTOS DISPONÍVEIS</h2>
     </div>
   </div>
 
   <!--MENU EVENTOS-->
-  <div class="row">
+  <div *ngIf="eventos > 0  && usuario?.nvl == 3" class="row">
+    <div class="col-sm-6 p-1">
+        <div class="card">
+          <div class="card-header">
+            ADICIONAR EVENTO
+          </div>
+          <div class="card-body">
+  
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 p-1">
+        <div class="card">
+          <div class="card-header">
+            CADASTRAR USUARIO
+          </div>
+          <div class="card-body">
+            <input type="text">
+            <button></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div *ngIf="eventos > 0" class="row">
     <div class="col-sm-12 p-1">
       <!--GRUPO DE EVENTOS-->
       <div class="card-groups">
-        <div class="card">
+        <div *ngFor="" class="card">
           <div class="card-body">
 
           </div>
         </div>
-        <div class="card">
-            <div class="card-body">
-  
-            </div>
-          </div>
       </div>
     </div>
   </div>
   <!--/MENU EVENTOS-->
   <!--/EVENTOS-->
 
+  <!--CASO NÃO TENHA EVENTOS-->
+  <div *ngIf="eventos == 0" class="row">
+    <div class="col-sm-12 pT-5">
+      <h2 class="text-center" style="color: #ff9800;">NÃO HÁ EVENTOS DISPONÍVEIS</h2>
+    </div>
+  </div>
+
+  <!--MENU DE CADASTROS-->
+  <div *ngIf="eventos == 0 && usuario?.nvl == 3" class="row">
+    <div class="col-sm-6 p-1">
+      <div class="card">
+        <div class="card-header">
+          ADICIONAR EVENTO
+        </div>
+        <div class="card-body">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 p-1">
+      <div class="card">
+        <div class="card-header">
+          CADASTRAR USUARIO
+        </div>
+        <div class="card-body">
+          <form>
+            <input type="text">
+            <button (click)="onClick()">Salvar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--MENU DE CADASTROS-->
+  <!--/CASO NÃO TENHA EVENTOS-->
+
   <br>
 
   <!--FOOTER-->
-  <div class="row fundoLaranja">
+  <div class="row fundoLaranja fixed-bottom">
     <div class="col-sm-12 fundoLaranja">
-      <footer>
+      <footer class="">
         <!--Footer Conteúdo-->
         <div class="container text-center text-md-left text-white">
         <div class="row">

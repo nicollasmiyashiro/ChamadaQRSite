@@ -12,4 +12,13 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
+  eventos: any = [];
+  usuario: any ={
+    nvl: 3
+  };
+
+  onClick(){
+    alert("usuario.nvl");
+  }
+
 }
