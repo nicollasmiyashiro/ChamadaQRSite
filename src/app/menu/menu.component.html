@@ -19,14 +19,14 @@
   <!--/MENU-->
 
   <!--EVENTOS-->
-  <div *ngIf="eventos > 0" class="row">
+  <div *ngIf="eventos.length > 0" class="row">
     <div class="col-sm-12 p-5">
       <h2 class="text-center" style="color: #ff9800;">EVENTOS DISPONÍVEIS</h2>
     </div>
   </div>
 
   <!--MENU EVENTOS-->
-  <div *ngIf="eventos > 0  && usuario?.nvl == 3" class="row">
+  <div *ngIf="eventos.length > 0  && usuario?.nvl == 3" class="row">
     <div class="col-sm-6 p-1">
         <div class="card">
           <div class="card-header">
@@ -43,19 +43,22 @@
             CADASTRAR USUARIO
           </div>
           <div class="card-body">
-            <input type="text">
-            <button></button>
+            <form>
+              <input type="text">
+              <button (click)="onClick()">Salvar</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  <div *ngIf="eventos > 0" class="row">
+  <div *ngIf="eventos.length > 0" class="row">
     <div class="col-sm-12 p-1">
       <!--GRUPO DE EVENTOS-->
       <div class="card-groups">
-        <div *ngFor="" class="card">
+        <div *ngFor="let ev of eventos" class="card mt-2">
           <div class="card-body">
-
+            <div class="card-title h5">SALA {{ ev.nome }}</div>
+            <button class="btn btn-primary">MAIS INFORMAÇÕES</button>
           </div>
         </div>
       </div>
@@ -65,14 +68,14 @@
   <!--/EVENTOS-->
 
   <!--CASO NÃO TENHA EVENTOS-->
-  <div *ngIf="eventos == 0" class="row">
+  <div *ngIf="eventos.length == 0" class="row">
     <div class="col-sm-12 pT-5">
       <h2 class="text-center" style="color: #ff9800;">NÃO HÁ EVENTOS DISPONÍVEIS</h2>
     </div>
   </div>
 
   <!--MENU DE CADASTROS-->
-  <div *ngIf="eventos == 0 && usuario?.nvl == 3" class="row">
+  <div *ngIf="eventos.length == 0 && usuario?.nvl == 3" class="row">
     <div class="col-sm-6 p-1">
       <div class="card">
         <div class="card-header">

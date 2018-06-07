@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Evento } from "../classes/Evento";
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -12,7 +14,7 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  eventos: any = [];
+  eventos: Evento[] = [new Evento("103"), new Evento("104")];
   usuario: any ={
     nvl: 3
   };
