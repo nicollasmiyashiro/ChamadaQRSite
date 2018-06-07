@@ -1,5 +1,4 @@
-<div class="container-fluid">
-
+<header class="container-fluid">
   <!--MENU-->
   <div class="row fundoLaranja">
     <div class="col-sm-12">
@@ -17,6 +16,8 @@
     </div>
   </div>
   <!--/MENU-->
+</header>
+<main role="main" class="container-fluid">
 
   <!--EVENTOS-->
   <div *ngIf="eventos.length > 0" class="row">
@@ -58,11 +59,12 @@
         <div *ngFor="let ev of eventos" class="card mt-2">
           <div class="card-body">
             <div class="card-title h5">SALA {{ ev.nome }}</div>
-            <button class="btn btn-primary">MAIS INFORMAÇÕES</button>
+            <button class="btn btn-primary" routerLink="/lista-presenca">MAIS INFORMAÇÕES</button>
           </div>
         </div>
       </div>
     </div>
+    <div style="clear: both"></div>
   </div>
   <!--/MENU EVENTOS-->
   <!--/EVENTOS-->
@@ -102,61 +104,56 @@
   </div>
   <!--MENU DE CADASTROS-->
   <!--/CASO NÃO TENHA EVENTOS-->
+</main>
 
-  <br>
-
-  <!--FOOTER-->
-  <div class="row fundoLaranja fixed-bottom">
-    <div class="col-sm-12 fundoLaranja">
-      <footer class="">
-        <!--Footer Conteúdo-->
-        <div class="container text-center text-md-left text-white">
-        <div class="row">
-          <!--First column-->
-          <div class="col-md-4">
-              <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Footer Content</h5>
-              <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
-                  amet, consectetur adipisicing elit.</p>
-          </div>
-          <!--/.First column-->
-
-          <hr class="clearfix w-100 d-md-none">
-
-          <!--Second column-->
-          <div class="col-md-2 mx-auto">
-              <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Links</h5>
-              <ul class="list-unstyled">
-                  <li>
-                      <a href="#!">Link 1</a>
-                  </li>
-                  <li>
-                      <a href="#!">Link 2</a>
-                  </li>
-                  <li>
-                      <a href="#!">Link 3</a>
-                  </li>
-                  <li>
-                      <a href="#!">Link 4</a>
-                  </li>
-              </ul>
-          </div>
-          <!--/.Second column-->
+<!--FOOTER-->
+<footer class="footer fixed-bottom fundoLaranja"
+  [ngStyle]="{
+    'bottom': (eventos.length > 0 ? '0' : ''),
+    'position': (eventos.length > 0 ? 'relative' : '')
+  }"> 
+  <div class="container">
+    <div class="container text-center text-md-left text-white">
+      <div class="row">
+        <!--First column-->
+        <div class="col-md-4">
+            <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Footer Content</h5>
+            <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit.</p>
         </div>
+        <!--/.First column-->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!--Second column-->
+        <div class="col-md-2 mx-auto">
+            <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Links</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#!">Link 1</a>
+                </li>
+                <li>
+                    <a href="#!">Link 2</a>
+                </li>
+                <li>
+                    <a href="#!">Link 3</a>
+                </li>
+                <li>
+                    <a href="#!">Link 4</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.Second column-->
       </div>
-      <!--/.Footer Conteúdo-->
-
-      <hr>
-
-        
-
-        <!--Copyright-->
-        <div class="footer-copyright text-center text-white">
-            © 2018 Copyright:
-            <a href="http://fabricaappu9.com.br/">Fábrica de aplicativos Uninove</a>
-        </div>
-        <!--/.Copyright-->
-      </footer>
     </div>
+    <!--/.Footer Conteúdo-->
+    <hr>
+      <!--Copyright-->
+      <div class="footer-copyright text-center text-white">
+          © 2018 Copyright:
+          <a href="http://fabricaappu9.com.br/">Fábrica de aplicativos Uninove</a>
+      </div>
+      <!--/.Copyright-->
   </div>
-  <!--/FOOTER-->
-</div>
+</footer>
+<!--/FOOTER-->

@@ -14,7 +14,7 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  eventos: Evento[] = [new Evento("103"), new Evento("104")];
+  eventos: Evento[] = [new Evento("103"), new Evento("104"), new Evento("104"), new Evento("104")];
   usuario: any ={
     nvl: 3
   };

@@ -1,0 +1,81 @@
+<header class="container-fluid">
+    <!--MENU-->
+    <div class="row fundoLaranja">
+        <div class="col-sm-12">
+        <nav class="navbar navbar-light fundoLaranja">
+            <a class="navbar-brand" href="http://localhost:4200"><img src="../../assets/img/logo.png" alt="Chamada QR"></a>
+            <ul class="nav nav-pill justify-content-end">
+                <li class="nav-item">
+                <p class="justify pr-5 pt-1 text-white">NICOLLAS MIYASHIRO REZENDE</p>
+                </li>
+                <li class="nav-item">
+                <a routerLink="/" class=""><button class="btn btn-secondary">SAIR</button></a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    <!--/MENU-->
+</header>
+
+<main role="main" class="container-fluid">
+    <div class="row mt-2">
+        <div class="col text-center">
+            <h2 class="h1">SALA {{ sala }}</h2>
+            <p class="text-muted">Clique para gerar o QR Code</p>
+            <button class="btn btn-primary">Gerar QR Code</button>
+        </div>
+    </div>
+</main>
+
+<!--FOOTER-->
+<footer class="footer fixed-bottom fundoLaranja"
+  [ngStyle]="{
+    'bottom': (eventos.length > 0 ? '0' : ''),
+    'position': (eventos.length > 0 ? 'relative' : '')
+  }"> 
+  <div class="container">
+    <div class="container text-center text-md-left text-white">
+      <div class="row">
+        <!--First column-->
+        <div class="col-md-4">
+            <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Footer Content</h5>
+            <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit.</p>
+        </div>
+        <!--/.First column-->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!--Second column-->
+        <div class="col-md-2 mx-auto">
+            <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Links</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#!">Link 1</a>
+                </li>
+                <li>
+                    <a href="#!">Link 2</a>
+                </li>
+                <li>
+                    <a href="#!">Link 3</a>
+                </li>
+                <li>
+                    <a href="#!">Link 4</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.Second column-->
+      </div>
+    </div>
+    <!--/.Footer Conteúdo-->
+    <hr>
+      <!--Copyright-->
+      <div class="footer-copyright text-center text-white">
+          © 2018 Copyright:
+          <a href="http://fabricaappu9.com.br/">Fábrica de aplicativos Uninove</a>
+      </div>
+      <!--/.Copyright-->
+  </div>
+</footer>
+<!--/FOOTER-->
