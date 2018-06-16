@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { CadastrarAlunosComponent } from './cadastrar-alunos/cadastrar-alunos.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { NgxQRCodeModule } from "ngx-qrcode2";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
   imports: [
     BrowserModule,
     AlertModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    NgxQRCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

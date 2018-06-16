@@ -22,12 +22,12 @@
   <!--EVENTOS-->
   <div *ngIf="eventos.length > 0" class="row">
     <div class="col-sm-12 p-5">
-      <h2 class="text-center" style="color: #ff9800;">EVENTOS DISPONÍVEIS</h2>
+      <h2 class="text-center">EVENTOS DISPONÍVEIS</h2>
     </div>
   </div>
 
   <!--MENU EVENTOS-->
-  <div *ngIf="eventos.length > 0  && usuario?.nvl == 3" class="row">
+  <div *ngIf="eventos.length > 0 && usuario?.nvl == 3" class="row">
     <div class="col-sm-6 p-1">
         <div class="card">
           <div class="card-header">
@@ -72,7 +72,7 @@
   <!--CASO NÃO TENHA EVENTOS-->
   <div *ngIf="eventos.length == 0" class="row">
     <div class="col-sm-12 pT-5">
-      <h2 class="text-center" style="color: #ff9800;">NÃO HÁ EVENTOS DISPONÍVEIS</h2>
+      <h2 class="text-center">NÃO HÁ EVENTOS DISPONÍVEIS</h2>
     </div>
   </div>
 

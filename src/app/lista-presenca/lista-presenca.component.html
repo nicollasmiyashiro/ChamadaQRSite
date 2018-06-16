@@ -9,7 +9,7 @@
                 <p class="justify pr-5 pt-1 text-white">NICOLLAS MIYASHIRO REZENDE</p>
                 </li>
                 <li class="nav-item">
-                <a routerLink="/" class=""><button class="btn btn-secondary">SAIR</button></a>
+                <a routerLink="/menu" class=""><button class="btn btn-secondary">VOLTAR</button></a>
                 </li>
             </ul>
         </nav>
@@ -19,11 +19,17 @@
 </header>
 
 <main role="main" class="container-fluid">
-    <div class="row mt-2">
+    <div class="row mt-5">
         <div class="col text-center">
             <h2 class="h1">SALA {{ sala }}</h2>
             <p class="text-muted">Clique para gerar o QR Code</p>
-            <button class="btn btn-primary">Gerar QR Code</button>
+            <button class="btn btn-primary mb-2" (click)="gerarQR()">Gerar QR Code</button>
+            <ngx-qrcode
+                *ngIf="mostra"
+                qrc-element-type="url" 
+                [qrc-value] = "value"
+                qrc-version = "5">
+            </ngx-qrcode>
         </div>
     </div>
 </main>
@@ -31,8 +37,8 @@
 <!--FOOTER-->
 <footer class="footer fixed-bottom fundoLaranja"
   [ngStyle]="{
-    'bottom': (eventos.length > 0 ? '0' : ''),
-    'position': (eventos.length > 0 ? 'relative' : '')
+    'bottom': (alunos.length > 0 ? '0' : ''),
+    'position': (alunos.length > 0 ? 'relative' : '')
   }"> 
   <div class="container">
     <div class="container text-center text-md-left text-white">

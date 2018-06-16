@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxQRCodeModule } from "ngx-qrcode2";
 
 @Component({
   selector: 'app-lista-presenca',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaPresencaComponent implements OnInit {
 
+  alunos: any[] = [];
   sala: string;
+  mostra: boolean = false;
+  value: string = "adsasdas";
+
+  gerarQR(){
+    this.mostra = true;
+  }
 
   constructor() { }
 
